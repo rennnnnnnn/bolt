@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+body{
+  font-family: "Raleway",selif;
+  font-color:#fff;
+}
+
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.fa:before{
+  font-family: FontAwesome;
+  display: inline-block;
+  text-decoration: none;
+}
+/*---------------------------
+header
+_____________________________*/
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  z-index: 999; 
+  background-color: #fff;
+}
+
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.inner_menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-bolt{
+  color: #4e4e4e;
+}
+/*--------------------------
+common
+---------------------------*/
+.main{
+   margin-top: 78px;
+}
+.background{
+  background-color: #f2f2f2;
+}
+.button{
+  font-size: 12px;
+  text-decoration: none;
+  padding: 14px 12px;
+  background-color: #74cfae;
+  color: #fff;
+  background-color: #74cfae
+   -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.button:hover{
+  color:  #74cfae;
+  background-color: #fff;
+}
+/*--------------------------
+first_view
+---------------------------*/
+.first_view{
+  background-color: #f2f2f2;
+}
+
+.first_view_title{
+  padding: 250px 0;
+  text-align: center;
+}
+.first_view_theme{
+  color: #74cfae;
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.first_view_subtheme{
+  color: #c0c0c0;
+  font-size: 30px;
+}
+/*--------------------------
+description
+---------------------------*/
+.description{
+  padding-top: 50px;
+}
+.description .inner{
+  font-size:0;
+}
+.description_text{
+  display: inline-block;
+  margin-left: 200px;
+  margin-top: 60px;
+  vertical-align: top;
+}
+
+.description_title{
+  font-size: 24px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.description_title+p{
+  font-size: 20px;  
+  word-wrap: break-word;
+  width: 500px;
+  text-align: justify;
+  text-justify: auto;
+  line-height: 20px;
+}
+
+/*--------------------------
+work
+---------------------------*/
+.work_head{
+  text-align: center;
+  padding: 60px 40px;
+  font-size: 24px;
+  color: #4e4e4e;
+}
+.work_contents{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+  }
+.work{
+  background-color: #f2f2f2;
+}
+
+.work_thumb{
+  width: 300px;
+  font-size: 0;
+  margin-left: 100px;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+  opacity: 0.7;
+   -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+.work_thumb:hover{
+  opacity: 1;
+}
+.work_thumb:first-child{
+  margin-left:0;
+
+}
+.work_thumb:nth-child(4){
+  margin-left: 0;
+}
+
+.work_text{
+  padding: 10px 0 70px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.work_description{
+  margin-right: 90px;
+  text-align: center;
+  width: 500px;
+  line-height: 20px;
+
+}
+
+.work_button{
+  padding: 14px 20px;
+
+}
+/*--------------------------
+our_skills
+---------------------------*/
+.our_skills{
+  background-color:#4e4e4e;
+  padding: 70px 0 100px;
+}
+
+.our_skills_title{
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 24px;
+  color: #fff;
+}
+.our_skills_contents{
+  display: flex;
+}
+.our_skills_item{
+  width: 20%;
+  margin-right: 180px;
+  text-align: center;
+}
+.our_skills_item:last-child{
+  margin-right: 0;
+}
+.our_skills_text{
+  color: #fff;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+/*--------------------------
+icon
+---------------------------*/
+
+.icon{
+  background-color: #f2f2f2;
+  padding: 200px 0 200px;
+}
+
+.icon_nav{
+  display: flex;
+  justify-content: center;
+}
+.icon_nav_item{
+width: 185px;
+}
+.icon_nav_item .fa{
+  color: #74cfae;
+  background-color: #f2f2f2;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.icon_nav_item .fa:hover{
+  background-color: #fff;
+}
+
+
+/*--------------------------
+footer
+---------------------------*/
+.green{
+  background-color: #74cfae;
+  color: #fff;
+}
+
+.footer{
+  position: relative;
+  margin-top: auto;
+  padding: 20px 0 25px 0;
+
+}
+
+.name{
+  position: absolute;
+  font-size: 10px;
+  right: 30%;
+}

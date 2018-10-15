@@ -37,13 +37,18 @@ _____________________________*/
   margin: 0 auto;
 }
 
-.inner_menu{
+/*.inner_menu{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+}*/
+
 .fa-bolt{
+  float: left;
   color: #4e4e4e;
+}
+.button{
+  float: right;
 }
 /*--------------------------
 common
@@ -51,6 +56,7 @@ common
 .main{
    margin-top: 78px;
 }
+
 .background{
   background-color: #f2f2f2;
 }
@@ -76,10 +82,10 @@ first_view
 ---------------------------*/
 .first_view{
   background-color: #f2f2f2;
+  padding: 250px 0;
 }
 
 .first_view_title{
-  padding: 250px 0;
   text-align: center;
 }
 .first_view_theme{
@@ -101,11 +107,15 @@ description
 .description .inner{
   font-size:0;
 }
+
+.description_thumb{
+  margin-left: 60px;
+  vertical-align: middle; /*両方につける*/
+}
 .description_text{
   display: inline-block;
-  margin-left: 200px;
-  margin-top: 60px;
-  vertical-align: top;
+  margin-left: 170px;
+  vertical-align: middle;
 }
 
 .description_title{
@@ -125,36 +135,43 @@ description
 /*--------------------------
 work
 ---------------------------*/
+.work{
+  background-color: #f2f2f2;
+  padding: 60px 0 70px;
+}
 .work_head{
+  margin-bottom: 40px;
   text-align: center;
-  padding: 60px 40px;
   font-size: 24px;
   color: #4e4e4e;
 }
 .work_contents{
     display: flex;
     flex-wrap: wrap;
-    width: 1100px;
+    margin-bottom: 90px;
   }
-.work{
-  background-color: #f2f2f2;
-}
-
 .work_thumb{
   width: 300px;
   font-size: 0;
   margin-left: 100px;
-  margin-bottom: 80px;
+  margin-top: 80px;
   box-sizing: border-box;
-  opacity: 0.7;
+}
+.work_thumb a{
+   opacity: 0.7;
    -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all  0.3s ease;
 }
-.work_thumb:hover{
+
+.work_thumb a:hover{
   opacity: 1;
 }
+.work_thumb:nth-child(-n+3){
+  margin-top: 0;
+}
+
 .work_thumb:first-child{
   margin-left:0;
 
@@ -164,9 +181,9 @@ work
 }
 
 .work_text{
-  padding: 10px 0 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
 
 }
 
@@ -210,7 +227,7 @@ our_skills
 .our_skills_text{
   color: #fff;
   font-size: 16px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /*--------------------------
@@ -225,11 +242,15 @@ icon
 .icon_nav{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .icon_nav_item{
 width: 185px;
 }
 .icon_nav_item .fa{
+  width: 100%;
+  /*display: block;*/
+  padding: 30px 0;
   color: #74cfae;
   background-color: #f2f2f2;
   -webkit-transition: all 0.3s ease;
@@ -250,16 +271,11 @@ footer
   background-color: #74cfae;
   color: #fff;
 }
-
 .footer{
-  position: relative;
-  margin-top: auto;
   padding: 20px 0 25px 0;
 
 }
-
 .name{
-  position: absolute;
+  float: right;
   font-size: 10px;
-  right: 30%;
 }

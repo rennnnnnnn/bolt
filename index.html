@@ -4,22 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="This is my portfolio site." content="サイト名">
+    <meta name="description" content="This is my portfolio site.">
     <meta name=”keywords” content=”bolt,bootstrap,portfolio”>
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <nav class="inner">
-        <div>
+        <div class="clearfix">
             <span class="fa fa-bolt fa-3x"></span>
             <a class="button" href="">Contact</a>
+            <div id="humberger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+        </div>
+        <div class="button button_box">
+          Contact
         </div>
       </nav>
     </header>
@@ -34,11 +42,15 @@
       </section>
       <article class="description green">
         <div class="inner">
+          <div class="thumb_box">
             <img class="description_thumb" src="img/iphone.png" alt="iphone">
+          </div>
+          <div class="text_box">
             <div class="description_text">
               <h2 class="description_title">WHAT CAN WE DO?</h2>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
+          </div>
         </div>
       </article>
       <section class="work">
@@ -54,7 +66,9 @@
           </ul>
           <div class="work_text">
             <p class="work_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been theph industry's standard dummy text ever</p>
-            <a class="button work_button" href="">Email Me!</a>
+            <div class="work_button_wrapper">
+              <a class="button work_button" href="">Email Me!</a>
+            </div>
           </div>
         </div>
       </section>
@@ -102,10 +116,16 @@
     </main>
     <footer class="footer green">
       <div class="inner">
-        <small class="name">Created with&hearts;by BlackTie.co.</small>
+        <p class="name">Created with&hearts;by BlackTie.co.</p>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+      $(function() {
+    $('humberger').click(function(){
+        $('button_box').show();
+    });
+});
+    </script>
   </div>
 </body>
 

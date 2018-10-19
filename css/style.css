@@ -54,15 +54,15 @@ _____________________________*/
   align-items: center;
   justify-content: space-between;
 }*/
-
+.br-sp{
+  display: none;
+}
 .fa-bolt{
   float: left;
   color: #4e4e4e;
 }
 .clearfix .button{
-  position: absolute;
-  right: 8%;
-
+  float: right;
 }
 /*--------------------------
 common
@@ -190,12 +190,7 @@ work
 .work_thumb:nth-child(-n+3){
   margin-top: 0;
 }
-
-.work_thumb:first-child{
-  margin-left:0;
-
-}
-.work_thumb:nth-child(4){
+.work_thumb:nth-child(3n+1){
   margin-left: 0;
 }
 
@@ -313,48 +308,52 @@ sp
   /*--------------------------
 header
 ---------------------------*/
-.button{
-  float: none;
-}
-.button_box{
-  display: none;
 
-}
-#humberger{
-  float: right;
-  position: relative;
-  height: 30px;
-  width: 40px;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  .br-sp{
+    display: block;
+  }
+  .button{
+    float: none;
+  }
+  .button_box{
+    display: none;
 
-#humberger div {
-  position: absolute;
-  left: 8px;
-  height: 2px;
-  width: 24px;
-  background-color: #ddd;
-  display: inline-block;
-  box-sizing: border-box;
-}
-#humberger div:nth-of-type(1) {
-  top: 6px;
-}
-#humberger div:nth-of-type(2) {
-  top: 12px;
-}
-#humberger div:nth-of-type(3) {
-  top: 18px;
-}
+  }
+  #humberger{
+    float: right;
+    position: relative;
+    height: 30px;
+    width: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-.clearfix .button{
-  display: none;
-}
+  #humberger div {
+    position: absolute;
+    left: 8px;
+    height: 2px;
+    width: 24px;
+    background-color: #ddd;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #humberger div:nth-of-type(1) {
+    top: 6px;
+  }
+  #humberger div:nth-of-type(2) {
+    top: 12px;
+  }
+  #humberger div:nth-of-type(3) {
+    top: 18px;
+  }
+
+  .clearfix .button{
+    display: none;
+  }
   .first_view{
     padding: 160px 0 130px;
   }
@@ -385,6 +384,7 @@ header
   .work_contents{
     text-align: center;
     display: block;
+    margin-bottom: 0;
   }
 
   .work_thumb{
@@ -392,7 +392,7 @@ header
     margin-top: 0;
     width: auto;
   }
-  .work_thumb:nth-child(3){
+  .work_thumb:nth-child(3n){
     margin-bottom:80px;
   }
   .work_description{
@@ -418,6 +418,9 @@ header
     width: 100%;
     margin-bottom: 80px;
   }
+  .our_skills_item:last-child{
+    margin-bottom: 0;
+  }
   .icon{
     padding: 50px 0 50px;
   }
@@ -436,6 +439,10 @@ tab
   .inner{
     width: 97%;
     margin: 0 auto;
+  }
+
+  .br-sp{
+    display: none;
   }
   .fa-bolt{
     margin-left: 30px;
@@ -466,7 +473,7 @@ tab
   .work_contents{
     text-align: center;
     display: block;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 
   .work_thumb{
@@ -474,7 +481,7 @@ tab
     margin-top: 0;
     width: auto;
   }
-  .work_thumb:nth-child(3){
+  .work_thumb:nth-child(3n){
     margin-bottom:80px;
   }
   .work_description{
